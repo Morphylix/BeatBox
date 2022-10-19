@@ -18,6 +18,6 @@ class SoundViewModel(private val beatBox: BeatBox): BaseObservable() {
         }
 
     fun onButtonClicked() {
-        sound?.let { beatBox.play(it) }
+        sound?.let { beatBox.play(it, beatBox.playRate) }
     }
 }

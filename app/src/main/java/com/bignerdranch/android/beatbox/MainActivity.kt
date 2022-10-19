@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bignerdranch.android.beatbox.databinding.ActivityMainBinding
 import com.bignerdranch.android.beatbox.databinding.ListItemSoundBinding
 
-const val INITIAL_PROGRESS = 50
+const val INITIAL_PROGRESS = 100
 
 class MainActivity : Activity(), SeekBar.OnSeekBarChangeListener {
     private lateinit var beatBox: BeatBox
@@ -75,8 +75,8 @@ class MainActivity : Activity(), SeekBar.OnSeekBarChangeListener {
 
     override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
         if (beatBox.lastPlayedSound != null) {
-            val convertedProgress = p1 / 50.0f
-            beatBox.play(beatBox.lastPlayedSound!!, convertedProgress)
+            val convertedProgress = p1 / 100.0f
+            beatBox.playRate = convertedProgress
         }
         binding.seekBarTextview.text = getString(R.string.string_playback_speed, p1)
     }
