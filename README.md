@@ -1,7 +1,7 @@
 BeatBox app
 ==============
 
-An app from the book **'Android Programming (4th edition)'** by *Big Nerd Ranch*
+An app from the book **'Android Programming (4th edition)'** by *Big Nerd Ranch* for sound reproduction and pitching
 
 Learned and worked with:
 -------------------------
@@ -17,5 +17,5 @@ Learned and worked with:
 
 Screenshots:
 ------------------------
-![](/img/pic1.png)
-![](/img/pic2.png)
+![](/img/pic1.1.png)
+![](/img/pic2.1.png)
